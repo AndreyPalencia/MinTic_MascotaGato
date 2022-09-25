@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <ItemGroup>
+    <ProjectReference Include="..\CuidadoEnCasa.App.Dominio\CuidadoEnCasa.App.Dominio.csproj" />
+    <ProjectReference Include="..\CuidadoEnCasa.App.Persistencia\CuidadoEnCasa.App.Persistencia.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+</Project>

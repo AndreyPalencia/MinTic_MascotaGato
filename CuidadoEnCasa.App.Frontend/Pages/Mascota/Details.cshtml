@@ -1,0 +1,28 @@
+﻿@page
+@model CuidadoEnCasa.App.Frontend.Pages.DetailsModel
+@{
+}
+<h2> Gato: @Model.Gato.Nombre</h2>
+<div>
+    <p class="text-secondary"> Id: @Model.Gato.Id</p>  
+</div>
+<div>
+    <p class="text-secondary"> Codigo: @Model.Gato.Codigo</p>  
+</div>
+<div>
+    <p class="text-secondary"> Raza: @Model.Gato.Raza</p>  
+</div>
+<div>
+    <p class="text-secondary"> Color: @Model.Gato.Color</p>  
+</div>
+<div>
+    <p class="text-secondary"> Temperatura: @Model.Gato.Temperatura</p>  
+</div>
+<div>
+    <p class="text-secondary"> Peso: @Model.Gato.Peso</p>  
+</div>
+<div>
+    <p class="text-secondary"> Estado Animo: @Model.Gato.EstadoAnimo</p>  
+</div>
+
+<a asp-page="./Servicios" class="btn btn-primary">Regresar</a>

@@ -1,0 +1,34 @@
+﻿@page
+@model CuidadoEnCasa.App.Frontend.Pages.PropietarioEditModel
+@{
+}
+<h2> Edicion del Propietario: @Model.Propietarios.Nombre</h2>
+<form  method="post">
+    <div class= "form-group">
+        <input type= "hidden" asp-for = "Propietarios.Id"/>
+    </div>
+    <div class= "form-group">
+        <label asp-for = "Propietarios.Nombre"></label>
+        <input asp-for = "Propietarios.Nombre" class="form-control">
+        <span class = "text-danger" asp-validation-for = "Propietarios.Nombre"></span>
+    </div>
+    <div class= "form-group">
+        <label asp-for = "Propietarios.Apellido"></label>
+        <input asp-for = "Propietarios.Apellido" class="form-control">
+        <span class = "text-danger" asp-validation-for = "Propietarios.Apellido"></span>
+    </div>
+    <div class= "form-group">
+        <label asp-for = "Propietarios.Direccion"></label>
+        <input asp-for = "Propietarios.Direccion" class="form-control">
+        <span class = "text-danger" asp-validation-for = "Propietarios.Direccion"></span>
+    </div>
+    <div class= "form-group">
+        <label asp-for = "Propietarios.Telefono"></label>
+        <input asp-for = "Propietarios.Telefono" class="form-control">
+        <span class = "text-danger" asp-validation-for = "Propietarios.Telefono"></span>
+    </div>
+    <button type="submit" class= "btn btn-primary">Grabar</button>
+    <a asp-page="./PropietarioServicio"  class="btn btn-primary">Regresar</a>
+    </div>
+</form>
+

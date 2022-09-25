@@ -1,0 +1,58 @@
+﻿@page
+@model CuidadoEnCasa.App.Frontend.Pages.ServiciosModel
+@{
+}
+<h1>Listado Mascotas </h1>
+<table class="table">
+    <thead>
+            <tr>
+                <th>Codigo</th>
+                <th>Nombre</th>
+                <th>Color</th>
+                <th>Peso</th>
+                <th>Raza</th>
+                <th>Temperatura</th>
+                <th>Informacion</th>
+                <th>Edicion</th>
+                <th>Eliminar</th>
+            </tr>
+    </thead>
+    <tbody>
+        @foreach (var Gato in Model.Gatos)
+        {
+            <tr>
+                <td>@Gato.Codigo</td>
+                <td>@Gato.Nombre</td>
+                <td>@Gato.Color</td>
+                <td>@Gato.Peso</td>
+                <td>@Gato.Raza</td>
+                <td>@Gato.Temperatura</td>
+                <td>
+                    <!--Recordar QUE asp-route- se pone en la variable que entra por el OnGet de metodo de clase que llamamos;
+                    Este boton reliza la tarea de redicionar hacia la pagina de ./Details para poder ver los detalles de objeto -->
+                    <a class="btn btn-primary  table-btn" asp-page="./Details" asp-route-Id="@Gato.Id">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </a>
+                </td>
+                <td>
+                    <!--Recordar QUE asp-route- se pone en la variable que entra por el OnGet de metodo de clase que llamamos
+                    Este boton reliza la tarea de redicionar hacia la pagina de ./Edit para poder Editar el objeto -->
+                    <a class="btn btn-primary  table-btn" asp-page="./Edit" asp-route-Id="@Gato.Id">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </a>
+                </td>
+                <td>
+                    <!--Recordar QUE asp-route- se pone en la variable que entra por el OnGet de metodo de clase que llamamos
+                    Este boton reliza la tarea de redicionar hacia la pagina de ./Edit para poder Editar el objeto -->
+                    <a class="btn btn-primary  table-btn" asp-page="./Delete" asp-route-Id="@Gato.Id">
+                       <i class="fa-solid fa-trash-can"></i>
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<div>
+    <a class="btn btn-primary" asp-page="./Edit">
+    <i class="fa-solid fa-circle-plus"></i>Agregar Mascota</a>
+</div>

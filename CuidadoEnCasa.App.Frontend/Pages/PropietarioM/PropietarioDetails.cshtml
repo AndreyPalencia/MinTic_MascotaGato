@@ -1,0 +1,22 @@
+﻿@page
+@model CuidadoEnCasa.App.Frontend.Pages.PropietarioDetailsModel
+@{
+}
+<h2> Propietario: @Model.Propietarios.Nombre</h2>
+<div>
+    <p class="text-secondary"> Id: @Model.Propietarios.Id</p>  
+</div>
+<div>
+    <p class="text-secondary"> Nombre: @Model.Propietarios.Nombre</p>  
+</div>
+<div>
+    <p class="text-secondary"> Apellido: @Model.Propietarios.Apellido</p>  
+</div>
+<div>
+    <p class="text-secondary"> Dirección: @Model.Propietarios.Direccion</p>  
+</div>
+<div>
+    <p class="text-secondary"> Telefono: @Model.Propietarios.Telefono</p>  
+</div>
+
+<a asp-page="./PropietarioServicio" class="btn btn-primary">Regresar</a>

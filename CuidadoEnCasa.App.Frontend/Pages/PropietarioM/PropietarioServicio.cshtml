@@ -1,0 +1,51 @@
+﻿@page
+@model CuidadoEnCasa.App.Frontend.Pages.PropietarioServicioModel
+@{
+}
+<h1>Listado Propirtarios</h1>
+<table class="table">
+    <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Dirección</th>
+                <th>Informacion</th>
+                <th>Edicion</th>
+                <th>Eliminar</th>
+            </tr>
+    </thead>
+    <tbody>
+        @foreach (var Propietario in Model.Propietarios)
+        {
+            <tr>
+                <td>@Propietario.Nombre</td>
+                <td>@Propietario.Apellido</td>
+                <td>@Propietario.Direccion</td>
+                <td>
+                    <!--Recordar QUE asp-route- se pone en la variable que entra por el OnGet de metodo de clase que llamamos;
+                    Este boton reliza la tarea de redicionar hacia la pagina de ./Details para poder ver los detalles de objeto -->
+                    <a class="btn btn-primary  table-btn" asp-page="./PropietarioDetails" asp-route-Id="@Propietario.Id">
+                        <i class="fa-solid fa-circle-info" aria-hidden="true"> </i> 
+                    </a>
+                </td>
+                <td>
+                    <!--Recordar QUE asp-route- se pone en la variable que entra por el OnGet de metodo de clase que llamamos
+                    Este boton reliza la tarea de redicionar hacia la pagina de ./Edit para poder Editar el objeto -->
+                    <a class="btn btn-primary  table-btn" asp-page="./PropietarioEdit" asp-route-Id="@Propietario.Id">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                        
+                    </a>
+                </td>
+                <td>
+                    <!--Recordar QUE asp-route- se pone en la variable que entra por el OnGet de metodo de clase que llamamos
+                    Este boton reliza la tarea de redicionar hacia la pagina de ./Edit para poder Editar el objeto -->
+                    <a class="btn btn-primary  table-btn" asp-page="./PropietarioDelete" asp-route-Id="@Propietario.Id">
+                        <i class="fa-solid fa-trash-can-list" aria-hidden="true">  </i>
+                        <i class="fa-solid fa-trash-can"></i> 
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a asp-page="./PropietarioEdit" class="btn btn-primary"><i class="fa-solid fa-circle-plus"></i> Agregar Propietario</a>

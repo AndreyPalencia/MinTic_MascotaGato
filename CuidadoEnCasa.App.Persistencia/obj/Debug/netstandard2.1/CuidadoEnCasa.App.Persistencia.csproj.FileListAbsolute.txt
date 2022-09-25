@@ -1,0 +1,12 @@
+C:\MinTic\CuidadoEnCasa.App.Persistencia\obj\Debug\netstandard2.1\CuidadoEnCasa.App.Persistencia.csprojAssemblyReference.cache
+C:\MinTic\CuidadoEnCasa.App.Persistencia\obj\Debug\netstandard2.1\CuidadoEnCasa.App.Persistencia.AssemblyInfoInputs.cache
+C:\MinTic\CuidadoEnCasa.App.Persistencia\obj\Debug\netstandard2.1\CuidadoEnCasa.App.Persistencia.AssemblyInfo.cs
+C:\MinTic\CuidadoEnCasa.App.Persistencia\obj\Debug\netstandard2.1\CuidadoEnCasa.App.Persistencia.csproj.CoreCompileInputs.cache
+C:\MinTic\CuidadoEnCasa.App.Persistencia\bin\Debug\netstandard2.1\CuidadoEnCasa.App.Persistencia.deps.json
+C:\MinTic\CuidadoEnCasa.App.Persistencia\bin\Debug\netstandard2.1\CuidadoEnCasa.App.Persistencia.dll
+C:\MinTic\CuidadoEnCasa.App.Persistencia\bin\Debug\netstandard2.1\CuidadoEnCasa.App.Persistencia.pdb
+C:\MinTic\CuidadoEnCasa.App.Persistencia\bin\Debug\netstandard2.1\CuidadoEnCasa.App.Dominio.dll
+C:\MinTic\CuidadoEnCasa.App.Persistencia\bin\Debug\netstandard2.1\CuidadoEnCasa.App.Dominio.pdb
+C:\MinTic\CuidadoEnCasa.App.Persistencia\obj\Debug\netstandard2.1\CuidadoEnCasa.App.Persistencia.csproj.CopyComplete
+C:\MinTic\CuidadoEnCasa.App.Persistencia\obj\Debug\netstandard2.1\CuidadoEnCasa.App.Persistencia.dll
+C:\MinTic\CuidadoEnCasa.App.Persistencia\obj\Debug\netstandard2.1\CuidadoEnCasa.App.Persistencia.pdb

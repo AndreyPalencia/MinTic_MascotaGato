@@ -1,0 +1,30 @@
+﻿@page
+@model CuidadoEnCasa.App.Frontend.Pages.ListSignosModel
+@{
+    int IdMascota_Gato = Model.Gato.Id;
+}
+<h1>Listado de Signos Vitales</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Signos</th>
+            <th>Valor</th>
+            <th>Fecha</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var SignosVitales in Model.Signos)
+        {
+            <tr>
+                <td>@SignosVitales.Signo</td>
+                <td>@SignosVitales.Valor</td>
+                <td>@SignosVitales.FechaHora</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a class="btn btn-primary table-btn" asp-page="../Edit" asp-route-Id="@IdMascota_Gato">
+    <i aria-hidden="true"></i>Regresar
+</a>

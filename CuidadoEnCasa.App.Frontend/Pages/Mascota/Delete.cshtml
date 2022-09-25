@@ -1,0 +1,25 @@
+﻿@page
+@model CuidadoEnCasa.App.Frontend.Pages.DeleteModel
+@{
+}
+<h2> Borrar la Mascota Gato: @Model.Gato.Nombre</h2>
+<form  method="post">
+    <div class= "form-group">
+        <label asp-for = "Gato.Id"></label>
+        <input type= "hidden" asp-for = "Gato.Id"/>
+        <input asp-for = "Gato.Id" class="form-control" disabled>
+    </div>
+    <div class= "form-group">
+        <label asp-for = "Gato.Codigo"></label>
+        <input asp-for = "Gato.Codigo" class="form-control">
+        <span class = "text-danger" asp-validation-for = "Gato.Codigo"></span>
+    </div>
+    <div class= "form-group">
+        <label asp-for = "Gato.Nombre"></label>
+        <input asp-for = "Gato.Nombre" class="form-control">
+        <span class = "text-danger" asp-validation-for = "Gato.Nombre"></span>
+    </div>
+    <button type="submit" class= "btn btn-primary">Borrar</button>
+    <a asp-page="./Servicios" class="btn btn-primary">Regresar</a>
+    </div>
+</form>
